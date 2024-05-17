@@ -1,4 +1,4 @@
-const hamMenu = document.querySelector("hamberger");
+const hamMenu = document.querySelector("hamburger");
 const fullMenu = document.querySelector("fullMenu");
 function replaceFunction() {
   hamMenu.classList.replace("sm:hidden", "hidden");
