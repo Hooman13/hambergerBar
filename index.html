@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>MenuProject</title>
+  </head>
+  <body class="bg-black">
+    <nav
+      class="font-['Roboto'] font-normal text-sm sm:flex w-full rounded-xl bg-white sm:h-14 sm:justify-between justify-start"
+    >
+      <div
+        class="grid sm:grid-cols-4 gap-2 sm:gap-8 sm:justify-between sm:h-9 sm:w-96 py-6 sm:py-2.5 px-6 sm:items-center"
+      >
+        <div class="flex justify-between items-center">
+          <div id="Logo" class="pb-2.5 sm:pb-0">
+            <svg
+              width="60"
+              height="35"
+              viewBox="0 0 60 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.312 11.4824V11.5134C13.227 7.78843 9.689 4.88843 6.157 4.88843C3.8 4.88843 0 7.30543 0 7.30543C6.048 8.25343 7.258 16.3484 7.2 21.9884L26.161 31.1534C26.2791 31.2127 26.415 31.2259 26.5423 31.1906C26.6696 31.1553 26.7792 31.074 26.85 30.9624L27.419 30.0624C27.573 29.3574 22.547 18.7044 16.312 11.4824Z"
+                fill="url(#paint0_linear_102_18)"
+              />
+              <path
+                d="M40.0558 1.80137C23.7208 -5.59263 9.00576 20.8484 8.01676 22.1014C7.92376 22.2174 7.76976 22.2174 7.67676 22.2594L33.6348 34.4444C33.7407 34.5028 33.8655 34.5168 33.9818 34.4834C34.039 34.4671 34.0924 34.4396 34.1389 34.4025C34.1854 34.3654 34.2241 34.3195 34.2528 34.2674C34.7968 33.3294 36.2858 30.7674 37.2068 29.4354C43.4118 20.4164 49.7288 15.2914 58.9188 12.1354C59.0013 12.1088 59.0742 12.0586 59.1284 11.9909C59.1825 11.9233 59.2156 11.8412 59.2235 11.7549C59.2314 11.6685 59.2137 11.5818 59.1727 11.5054C59.1317 11.4291 59.0691 11.3665 58.9928 11.3254C55.6618 9.60137 44.2708 3.71837 40.0558 1.80137Z"
+                fill="url(#paint1_linear_102_18)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_102_18"
+                  x1="1.28886"
+                  y1="6.02025"
+                  x2="25.2702"
+                  y2="32.4808"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#EB5A67" />
+                  <stop offset="0.12" stop-color="#E85766" />
+                  <stop offset="0.21" stop-color="#E04D61" />
+                  <stop offset="0.29" stop-color="#D33D5A" />
+                  <stop offset="0.37" stop-color="#C02650" />
+                  <stop offset="0.44" stop-color="#A70943" />
+                  <stop offset="0.45" stop-color="#A30441" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_102_18"
+                  x1="36.3893"
+                  y1="0.668789"
+                  x2="33.767"
+                  y2="34.1521"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0.02" stop-color="#F39200" />
+                  <stop offset="0.35" stop-color="#F28E00" />
+                  <stop offset="0.64" stop-color="#F18301" />
+                  <stop offset="0.89" stop-color="#EE7402" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <a
+            href="/index.js"
+            id="hamburger"
+            class="sm:hidden"
+            onclick="myFunction()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <button
+          class="fullMenu hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+        >
+          <img src="/pics/Home Icon.svg" alt="homeIcon" class="w-6 h-6" />
+          <p class="px-2">Home</p>
+        </button>
+        <button
+          class="fullMenu hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+        >
+          <img src="/pics/Info.svg" alt="homeIcon" class="w-6 h-6" />
+          <p class="px-2">About</p>
+        </button>
+        <button
+          class="fullMenu hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+        >
+          <img src="/pics/Phone.svg" alt="homeIcon" class="w-6 h-6" />
+          <p class="px-2">Contact</p>
+        </button>
+      </div>
+      <div
+        class="fullMenu sm:grid sm:grid-cols-2 gap-2 px-6 pt-2.5 pb-6 sm:py-2.5 hidden"
+        id="myLinks"
+      >
+        <button class="rounded-lg sm:w-20 h-9 bg-[#FFBC00]">Login</button>
+        <button class="rounded-lg sm:w-24 h-9 bg-[#25A449]">SignUp</button>
+      </div>
+    </nav>
+    <script src="/index.js"></script>
+  </body>
+</html>
