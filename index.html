@@ -13,7 +13,7 @@
   </head>
   <body class="bg-black">
     <nav
-      class="font-display font-normal text-sm sm:flex w-full rounded-xl bg-white sm:h-14 sm:justify-between justify-start"
+      class="relative font-display font-normal text-sm sm:flex w-full rounded-xl bg-white sm:h-14 sm:justify-between justify-start"
     >
       <div
         class="grid sm:grid-cols-4 gap-2 sm:gap-8 sm:justify-between sm:h-9 sm:w-96 py-6 sm:py-2.5 px-6 sm:items-center"
@@ -73,30 +73,58 @@
           </button>
         </div>
         <button
-          class="fullMenu hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+          class="hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
         >
           <img src="/pics/Home Icon.svg" alt="homeIcon" class="w-6 h-6" />
           <p class="px-2">Home</p>
         </button>
         <button
-          class="fullMenu hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+          class="hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
         >
           <img src="/pics/Info.svg" alt="homeIcon" class="w-6 h-6" />
           <p class="px-2">About</p>
         </button>
         <button
-          class="fullMenu hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+          class="hidden sm:flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
         >
           <img src="/pics/Phone.svg" alt="homeIcon" class="w-6 h-6" />
           <p class="px-2">Contact</p>
         </button>
       </div>
       <div
-        class="fullMenu sm:grid sm:grid-cols-2 gap-2 px-6 pt-2.5 pb-6 sm:py-2.5 hidden"
+        class="sm:grid sm:grid-cols-2 gap-2 px-6 pt-2.5 pb-6 sm:py-2.5 hidden"
         id="myLinks"
       >
         <button class="rounded-lg sm:w-20 h-9 bg-[#FFBC00]">Login</button>
         <button class="rounded-lg sm:w-24 h-9 bg-[#25A449]">SignUp</button>
+      </div>
+      <div id="mobileSize" class="hidden">
+        <div
+          class="grid sm:grid-cols-4 gap-2 sm:gap-8 sm:justify-between sm:h-9 sm:w-96 py-6 sm:py-2.5 px-6 sm:items-center"
+        >
+          <button
+            class="flex gap-2 items-center hover:bg-[#9E999942] w-max rounded-md px-1"
+          >
+            <img src="/pics/Home Icon.svg" alt="homeIcon" class="w-6 h-6" />
+            <p class="px-2">Home</p>
+          </button>
+          <button
+            class="flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+          >
+            <img src="/pics/Info.svg" alt="homeIcon" class="w-6 h-6" />
+            <p class="px-2">About</p>
+          </button>
+          <button
+            class="flex gap-2 sm:gap-0 items-center hover:bg-[#9E999942] w-max rounded-md px-1 sm:py-1"
+          >
+            <img src="/pics/Phone.svg" alt="homeIcon" class="w-6 h-6" />
+            <p class="px-2">Contact</p>
+          </button>
+        </div>
+        <div class="grid gap-2 px-6 pt-2.5 pb-6 sm:py-2.5" id="myLinks">
+          <button class="rounded-lg sm:w-20 h-9 bg-[#FFBC00]">Login</button>
+          <button class="rounded-lg sm:w-24 h-9 bg-[#25A449]">SignUp</button>
+        </div>
       </div>
     </nav>
     <script src="/index.js"></script>
